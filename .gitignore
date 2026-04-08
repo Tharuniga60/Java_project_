@@ -7,6 +7,8 @@
 bin/
 out/
 build/
+target/
+
 
 # IDE/Editor configs
 .vscode/
