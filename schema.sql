@@ -1,7 +1,7 @@
 -- Drop and recreate the database
-DROP DATABASE IF EXISTS codingshare;
-CREATE DATABASE codingshare CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE codingshare;
+DROP DATABASE IF EXISTS java_project;
+CREATE DATABASE java_project CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE java_project;
 
 -- Create users table
 CREATE TABLE users (
@@ -23,6 +23,5 @@ CREATE TABLE resources (
     FOREIGN KEY (author_id) REFERENCES users(id) ON DELETE SET NULL
 );
 
--- Insert admin user safely
-INSERT INTO users (username, password_hash, full_name)
-VALUES ('admin', 'admin', 'Admin User');
+-- NOTE: To create an admin user, run CreateAdmin.java after setting up the database.
+-- It will insert an admin with a properly SHA-256 hashed password.
