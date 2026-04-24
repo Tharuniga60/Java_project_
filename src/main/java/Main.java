@@ -1,5 +1,6 @@
+import javax.swing.SwingUtilities;
+
 import app.ui.LoginFrame;
-import javax.swing.*;
 
 public class Main {
 public static void main(String[] args) {

@@ -1,14 +1,25 @@
 package app.ui;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Desktop;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.net.URI;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 import app.dao.ResourceDAO;
 import app.model.Resource;
 import app.model.ResourceTableModel;
 import app.model.User;
-import java.awt.*;
-import java.awt.event.*;
-import java.net.URI;
-import java.util.List;
-import javax.swing.*;
 
 public class MainFrame extends JFrame {
     private User user;
